@@ -18,9 +18,10 @@ export const drawEllipse = (
 ) => {
   const ctx = canvas.getContext("2d");
   ctx.beginPath();
-  ctx.ellipse(centerX, centerY, radiusX, radiusY, 0, 0, 2 * Math.PI);
+  ctx.ellipse(centerX, centerY, radiusX, Math.abs(radiusY), 0, 0, 2 * Math.PI);
   ctx.fillStyle = color;
   ctx.fill();
+  ctx.stroke();
 };
 
 export const drawTiltedCircle = (canvas, center, radius, tilt, color) => {

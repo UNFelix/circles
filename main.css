@@ -1,3 +1,9 @@
 body {
   margin: 0;
 }
+
+input[type="range"] {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
